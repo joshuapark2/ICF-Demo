@@ -2,10 +2,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link';
+
+/**
+ * ! Events Index
+ * Three different ways to return {title}
+ *  1. (props) 2. const {title} = props; 3. props.title
+ * 
+ * Within main className={styles.main} we are dynamically loading using data.json in the data folder
+ *    Meaning we have pages being generated from our database using Data Fetching
+ *       Static Generation is the alternative which pregenerate all the pages during build time
+ *       (check getStaticPaths on the Next.js documentation)
+*/
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -17,41 +29,31 @@ export default function Home() {
 
       <header>
         <nav>
-          <img />
-          <a href='/'> Home</a>
-          <a href='/about-us'> About Us</a>
-          <a href='/events'> Events</a>
+          <Link href="/"> 
+            Home
+          </Link>
+
+          <Link href="/about-us"> 
+            About Us
+          </Link>
+
+          <Link href="/events"> 
+            Events
+          </Link>
         </nav>
       </header>
 
       <main className={styles.main}>
-        <a href=''>
-          <img />
-          <h2> Events in London </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-              dolore eu fugiat nulla pariatur. </p>
-        </a>
-
-        <a href=''>
-          <img />
-          <h2> Events in San Francisco </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-              dolore eu fugiat nulla pariatur. </p>
-        </a>
-
-        <a href=''>
-          <img />
-          <h2> Events in Barcelona </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-              dolore eu fugiat nulla pariatur. </p>
-        </a>
-        
+        {data.map(
+          ev => 
+            <a 
+              key={ev.id} href={`/events/${ev.id}`}> 
+              <Image width={200} height={200} alt={ev.title} src={ev.image}/> 
+              <h2>{ev.title}</h2> 
+              <p> {ev.description}</p>
+            </a>
+          )
+        }
       </main>
 
       <footer className={styles.footer}>
@@ -59,4 +61,20 @@ export default function Home() {
       </footer>
     </>
   )
+}
+
+/**
+ * !Server-Side Function
+ * Rendering content on the server side - Must be exported as a stand-alone function never runs on the browser-side
+ * and before our home function component 
+ */
+export async function getServerSideProps() {
+  // destructuring data
+  const { events_categories } = await import('data/data.json'); // async functions must have await
+  // return objects that has props
+  return {
+      props:{
+          data: events_categories
+      }
+  }
 }
