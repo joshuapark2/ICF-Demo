@@ -66,15 +66,25 @@ main
       direction: rtl
     .content
       width: 50%
+      
 
 .about_us_list
   display: flex
   flex-direction: column
+  font-size: 16px
+  p
+    text-indent: 30px
+    margin: 0 0 10px 0 // top, right, bottom, left <- Reduced spacing between paragraphs
+  
 
 .events_page
   display: flex
   flex-direction: row
   gap: 20px
+  margin-left: 0
+  // align-items and justify-content are needed to center images in Events Page
+  align-items: center
+  justify-content: center
   .card
     position: relative
     h2
@@ -86,6 +96,7 @@ main
       color: white
       text-transformation: uppercase
       text-shadow: 1px 1px 20px black
+      margin: auto
 
 .cat_events
   width: 100%

@@ -1,39 +1,39 @@
 {
     "events_categories":[
         {
-        "id":"london",
-        "title":"Events in London",
-        "description":"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
-        "image":"https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        "id":"Climate and Resilience",
+        "title":"Events in Climate and Resilience",
+        "description":"ICF International is a global consulting firm that specializes in climate and sustainability. They offer a wide range of services including climate policy and planning, global climate consulting, climate communications, and custom climate risk analytics to help organizations prepare for existing and future global climate challenges.",
+        "image":"/images/ClimateAndResilience.png"
         },
         {
-            "id":"san-francisco",
-            "title":"Events in San Francisco",
-            "description":"corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate.",
-            "image":"https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+            "id":"Digital transformation",
+            "title":"Events in Digital Transformation",
+            "description":"To meet your enterprise goals in the digital age, you need a partner that understands your business context and knows how to develop systems—quickly—to help you deliver on your mission",
+            "image":"/images/DigitalTransformation.png"
         },
         {
-            "id":"barcelona",
-            "title":"Events in Barcelona",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1579282240050-352db0a14c21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=652&q=80"}
+            "id":"Encouraging participation and engagement",
+            "title":"Events in Encouraging Participation and Engagement",
+            "description":"We’ve sent candy sales soaring, smoking rates plummeting, and raised an entire nation’s GDP. Our experts will help you overcome barriers and take advantage of the breakneck pace of change",
+            "image":"/images/Encouraging.jpg"}
         ],
 
     "allEvents":[
         {
-            "id":"london-comic-con-winter",
-            "title":"London Comic Con Winter",
-            "city":"London",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1608889476561-6242cfdbf622?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+            "id":"Climate and Resilience-comic-con-winter",
+            "title":"Climate policy and planning",
+            "city":"Climate and Resilience",
+            "description":"Our experts can help you assess your climate risks and opportunities, engage your stakeholders, and integrate climate adaptation into your long-term planning and operations.",
+            "image":"/images/ClimatePolicy.jpg",
             "emails_registered":[]
         },
         {
             "id":"hyde-park-winter-wonderland",
-            "title":"Hyde Park Winter Wonderland",
-            "city":"London",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://hydeparkwinterwonderland.com/static/252d7fe6693a6a8b1887bd2049204103/039f7/2021-503x503-3.webp",
+            "title":"Global climate action",
+            "city":"Climate and Resilience",
+            "description":"Better prepare for existing—and future—global climate challenges with our objective insight, scientifically sound analysis, and multidisciplinary expertise.",
+            "image":"/images/ClimateComs.jpg",
             "emails_registered":[]},{"id":"new-years-eve-in-london-2023",
             "title":"New Years Eve in London 2023 ",
             "city":"London",
@@ -43,98 +43,58 @@
         },
         {
             "id":"'edtech-world-summit-2022",
-            "title":"EdTech World Summit 2022",
-            "city":"london",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "title":"Climate communications",
+            "city":"Climate and Resilience",
+            "description":"We offer climate education, awareness, and engagement that presents new findings and empowers positive change.",
+            "image":"/images/GlobalClimate.jpg",
             "emails_registered":["alicia@gmail.com","monica@gmail.com"]
         },
         {
-            "id":"sigala-at-electric-brixton",
-            "title":"Sigala at Electric Brixton",
-            "city":"london",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-            "emails_registered":["monica@gmail.com"]
-        },
-        {
-            "id":"kiss-haunted-house-party-2022",
-            "title":"KISS Haunted House Party 2022",
-            "city":"london",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://wembleypark.com/media/images/KISS-HHP-42-1440x810-Logos-Date-de.2e16d0ba.fill-496x279.jpg",
-            "emails_registered":[]
-        },
-        {
-            "id":"sf-blockchain-week",
-            "title":"SF Blockchain Week",
-            "city":"san-francisco",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1516245834210-c4c142787335?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+            "id":"Scaled Delivery",
+            "title":"Scaled Delivery",
+            "city":"Digital transformation",
+            "description":"Our Digital Services Center (DSC) provides patterns for enterprise delivery including practices and tenets that can be tailored to your specific needs.",
+            "image":"/images/ScaledDelivery.jpg",
             "emails_registered":["","","","laura@gmail.com","laura@gmail.com","laura@gmail.com"]
         },
         {
-            "id":"innovation-summit-san-francisco",
-            "title":"Innovation Summit San Francisco",
-            "city":"san-francisco",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1521464302861-ce943915d1c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+            "id":"Agile Engineering",
+            "title":"Agile Engineering",
+            "city":"Digital transformation",
+            "description":"Combine engineering methods, processes, and tools with rapid prototyping to construct, maintain, and integrate platforms.",
+            "image":"/images/AgileEngineering.jpg",
             "emails_registered":[]
         },
         {
-            "id":"fan-expo-san-francisco",
-            "title":"FAN EXPO San Francisco",
-            "city":"san-francisco",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+            "id":"Rapid implementation",
+            "title":"Rapid implementation",
+            "city":"Digital transformation",
+            "description":"Reduce implementation time, operating cost, and licensing costs to rapidly build agile applications that address unique business needs, span functional silos, and improve performance.",
+            "image":"/images/RapidImplementation.jpg",
             "emails_registered":[]
         },
         {
-            "id":"san-francisco-opera---san-francisco-tickets",
-            "title":"San Francisco Opera - San Francisco Tickets",
-            "city":"san-francisco",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1580809361436-42a7ec204889?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-            "emails_registered":[]
-        },
-        {
-            "id":"concert-christian-löffler-+-detect-ensemble",
-            "title":"Concert Christian Löffler + Detect Ensemble",
-            "city":"barcelona",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-            "emails_registered":["alicia@gmail.com","monica@gmail.com"]
-        },
-        {
-            "id":"the-halloween-house-party",
-            "title":"The Halloween House Party",
-            "city":"barcelona",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1587407627257-27b7127c868c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            "id":"Integrated Comms",
+            "title":"Integrated Comms",
+            "city":"Encouraging participation and engagement",
+            "description":"Our unique approach to integrated communications ignites Participation through culturally relevant storytelling, transformative ideas, unforgettable campaigns, and connected experiences. We help you create moments that matter—building armies of brand fans and advocates.",
+            "image":"/images/IntegratedComs.jpg",
             "emails_registered":["alicia@gmail.com","monica@gmail.com","david@yahoo.com","claire@ss.com"]
         },
         {
-            "id":"international-conference-on-industrial-design",
-            "title":"International Conference on Industrial Design",
-            "city":"barcelona",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "id":"Loyalty and CRM",
+            "title":"Loyalty and CRM",
+            "city":"Encouraging participation and engagement",
+            "description":"We believe that loyalty is more than just points and programs. Through a powerful combination of customer and industry strategy and insights, data science, and technology, we design and deliver award-winning loyalty, CRM, and experience solutions. We innovate alongside you—building experiences that cultivate deep emotional loyalty, advocacy, and a shared identity with your brand.",
+            "image":"/images/LoyaltyAndCRM.jpg",
             "emails_registered":["alicia@gmail.com","monica@gmail.com"]
         },
         {
-            "id":"world-congress-2022---barcelona",
-            "title":"World Congress 2022 - Barcelona",
-            "city":"barcelona",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-            "emails_registered":["alicia@gmail.com","monica@gmail.com"]
-        },
-        {
-            "id":"riskminds-international",
-            "title":"RiskMinds International",
-            "city":"barcelona",
-            "description":"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-            "image":"https://images.unsplash.com/photo-1591115765373-5207764f72e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "id":"Business Transformation",
+            "title":"Business Transformation",
+            "city":"Encouraging participation and engagement",
+            "description":"We help our clients navigate complex business challenges through our customer-centered approach. Our expert teams guide you in transforming your values, structures, operations, technology, and culture to obsessively focus on your target audiences. By designing and driving best-in-class experiences, we prove measurable impact in helping your business transform to meet enterprise-wide objectives.",
+            "image":"/images/BusinessTransformation.jpg",
             "emails_registered":["alicia@gmail.com","monica@gmail.com"]
         }
     ]
