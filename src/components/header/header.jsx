@@ -27,7 +27,7 @@ export const Header = () => {
                         </ul>
                     </nav>
                 </div>
-                <p className="title"> Lorem ipsum dolor sit amet </p>
+                <p className="title"> ICF Demo - Joshua Park </p>
             </div>
       </header>
     )

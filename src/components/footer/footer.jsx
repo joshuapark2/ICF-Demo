@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
         <footer>
-            <p> 2022 Time to Code - A Project</p>
+            <p> 2023 Joshua Park - ICF Demo</p>
         </footer>
     )
 }
