@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-import Link from 'next/link';
+import { HomePage } from '../src/components/home/home-page'
 
 /**
  * ! Events Index
@@ -17,6 +15,12 @@ import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
+
+/**
+ * Apply the calling of child class to parent class here
+ *   Calling the child class of home-page.jsx from src\components folder
+ * 
+ */
 export default function Home({ data }) {
   return (
     <>
@@ -27,38 +31,9 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <nav>
-          <Link href="/"> 
-            Home
-          </Link>
+      <HomePage data={data}/>
 
-          <Link href="/about-us"> 
-            About Us
-          </Link>
 
-          <Link href="/events"> 
-            Events
-          </Link>
-        </nav>
-      </header>
-
-      <main className={styles.main}>
-        {data.map(
-          ev => 
-            <a 
-              key={ev.id} href={`/events/${ev.id}`}> 
-              <Image width={200} height={200} alt={ev.title} src={ev.image}/> 
-              <h2>{ev.title}</h2> 
-              <p> {ev.description}</p>
-            </a>
-          )
-        }
-      </main>
-
-      <footer className={styles.footer}>
-        <p> 2022 Time to Code - A Project</p>
-      </footer>
     </>
   )
 }

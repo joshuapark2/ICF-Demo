@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import CatEvent from '../../../src/components/events/catEvent';
 
 /**
  *  - Link allows us to do client-side navigation in the browser
@@ -8,25 +7,7 @@ import Link from 'next/link';
  *     - Because anchor tags (a) should be associated with an href, passHref is need to keep key/href in Link
  *        - Starting with Next.js 13, the solution above doesn't work so we remove the anchor tag
  */
-const EventsCatPage = ( { data, pageName }) => {
-    return (
-        <div>
-            <h1>Events in { pageName }</h1>
-            
-            <div>
-                {
-                    data.map(ev => (
-                        <Link key={ev.id} href={`/events/${ev.city}/${ev.id}`}>
-                            <Image width={300} height={300} alt={ev.title} src={ev.image}/> 
-                            <h2> {ev.title} </h2>
-                            <p> {ev.description}</p>
-                        </Link>
-                    ))
-                }
-            </div>
-        </div>
-    )
-};
+const EventsCatPage = ( { data, pageName }) => <CatEvent data={data} pageName={pageName}/>
 
 export default EventsCatPage
 
