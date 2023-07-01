@@ -56,7 +56,7 @@ const AboutUsPage = () => {
                             <p>
                                 Our founding in 1969 as the Inner City Fund: We, at ICF, were founded in 1969 by a former Tuskegee Airman and 
                                     three U.S. Department of Defense analysts. Our initial focus was on financing minority-owned businesses in 
-                                    Washington D.C. This was a significant step in our company's history as it was founded with a purpose-driven 
+                                    Washington D.C. This was a significant step in our company history as it was founded with a purpose-driven 
                                     objective of empowering and providing access to resources for the minority-owned businesses in the country. 
                                     We are proud of our roots and continue to strive for inclusivity and diversity in all our endeavors.            
                             </p>
